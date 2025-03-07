@@ -19,7 +19,7 @@ CORS(app)
 
 # ✅ Login to wandb
 wandb.login(key=os.getenv("WANDB_API_KEY"))
-wandb.init()
+wandb.init(mode= "disabled")  # Initialize wandb in disabled mode to avoid logging
 #api = wandb.Api()
 
 # ✅ Define available language models
