@@ -19,7 +19,7 @@ CORS(app)
 
 # ✅ Login to wandb
 wandb.login(key=os.getenv("WANDB_API_KEY"))
-wandb.init(mode= "disabled")  # Initialize wandb in disabled mode to avoid logging
+wandb.init(project="codet5-finetuning", job_type= "download_artifact")  # Initialize wandb in disabled mode to avoid logging
 #api = wandb.Api()
 
 # ✅ Define available language models
@@ -43,7 +43,8 @@ def preload_models():
         models[language].eval()
 
 preload_models()  
-
+wandb.finish()  # Finish the wandb run after preloading models
+wandb.init(mode="disabled")  # Reinitialize wandb in disabled mode to avoid logging
 # Update this with the correct path to google-java-format.jar
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 GOOGLE_JAVA_FORMAT_PATH = os.path.join(BASE_DIR, "google-java-format.jar")
