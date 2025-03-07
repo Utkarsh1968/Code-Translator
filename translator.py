@@ -45,7 +45,8 @@ def preload_models():
 preload_models()  
 
 # Update this with the correct path to google-java-format.jar
-GOOGLE_JAVA_FORMAT_PATH = "D:\\ML\\code translator\\google-java-format.jar"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+GOOGLE_JAVA_FORMAT_PATH = os.path.join(BASE_DIR, "google-java-format.jar")
 
 def format_cpp_code(code):
     formatted_lines = []
