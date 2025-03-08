@@ -1,7 +1,7 @@
 # Code-Translator
 # Code Translator
 
-![Code Translator Screenshot](Screenshot .png)
+![Code Translator Screenshot](Screenshot.png)
 
 ## Overview
 
