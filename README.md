@@ -1,7 +1,7 @@
 # Code-Translator
 # Code Translator
 
-![Code Translator Screenshot](screenshot.png)
+![Code Translator Screenshot](Screenshot .png)
 
 ## Overview
 
@@ -46,7 +46,7 @@ Ensure you have the following installed:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/Code-translator.git
+git clone https://github.com/Utkarsh1968/Code-Translator.git
 cd Code-Translator
 ```
 
@@ -121,5 +121,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any queries, reach out at [[your-email@example.com](mailto:your-email@example.com)] or create an issue in the repository.
+For any queries, reach out at [[ucinovation2004@example.com](mailto:ucinovation2004@example.com)] or create an issue in the repository.
 
